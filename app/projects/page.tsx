@@ -1,9 +1,9 @@
-import Journey from "@/app/components/Journey";
+import Projects from '@/app/components/Projects'
 
-export default function Home() {
+export default function ProjectsPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Journey />
+        <Projects />
     </main>
   );
 }
