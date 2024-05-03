@@ -11,14 +11,16 @@ export default function Nav() {
   return (
     <nav className="bg-neutral-800 w-full fixed px-8 md:px-24 py-3">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
-        <p className={`${kode.className} tracking-widest text-slate-300`}>
+        <p
+          className={`${kode.className} w-full md:w-min md:grow-0 pb-3 md:pb-0 tracking-widest text-slate-300 border-b-2 md:border-b-0 border-slate-700 border-dotted`}
+        >
           davidkrause.tech
         </p>
-        <div className="mt-5 mb-2 md:my-0">
+        <div className="mt-3 mb-2 md:my-0">
           <Link
             className={`${
               pathname === "/" ? "border-green-600 border-b-2" : ""
-            } text-blue-100 pl-0 sm:pl-1 px-1 pt-2 pb-1 uppercase tracking-widest mr-4`}
+            } text-blue-100 pl-0 md:pl-1 px-1 pt-2 pb-1 uppercase tracking-widest mr-4`}
             href="/"
           >
             My Journey
