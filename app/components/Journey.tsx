@@ -16,7 +16,7 @@ export default function Journey() {
       >
         My Journey
       </h1>
-      <p className="mb-8 text-xl max-w-xl">
+      <p className="mb-8 text-xl max-w-xl leading-9">
         My journey as a web technologist began not too long after the
         internet&apos;s public availability in the 90s. Back then, the web was a
         fascinating frontier, and I was eager to unravel its mysteries. As a
