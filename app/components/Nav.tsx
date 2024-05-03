@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import { Kode_Mono } from 'next/font/google';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
@@ -11,11 +12,18 @@ export default function Nav() {
   return (
     <nav className="bg-neutral-800 w-full fixed pb-0 md:pb-3 px-8 md:px-24 py-3">
       <div className="flex flex-col md:flex-row justify-between items-start w-full">
-        <p
-          className={`${kode.className} pt-1 sm:w-full sm:w-min md:grow-0 pb-2 md:pb-0 tracking-widest text-slate-300`}
+        <div
+          style={{ lineHeight: '20px' }}
+          className={`${kode.className} pt-1 sm:w-full sm:w-min md:grow-0 pb-2 md:pb-0 tracking-widest text-slate-300 flex items-end gap-3`}
         >
+          <Image 
+            src="/davidkrausetech.svg"
+            alt="davidkrause.tech Logo"
+            width={24}
+            height={24}
+          />
           davidkrause.tech
-        </p>
+        </div>
         <div className="mt-2 mb-1 md:my-0">
           <Link
             className={`${
