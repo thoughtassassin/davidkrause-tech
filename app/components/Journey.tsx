@@ -12,7 +12,7 @@ export default function Journey() {
   return (
     <section className="min-w-full">
       <h1
-        className={`${sedan.className} text-8xl font-bold mb-10 min-w-full text-slate-400`}
+        className={`${sedan.className}  text-6xl sm:text-8xl font-bold mb-10 min-w-full text-slate-400`}
       >
         My Journey
       </h1>
