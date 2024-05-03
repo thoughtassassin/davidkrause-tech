@@ -16,21 +16,14 @@ export default function Journey() {
       >
         My Journey
       </h1>
-      <p className="mb-8 text-xl max-w-xl leading-9">
-        My journey as a web technologist began not too long after the
-        internet&apos;s public availability in the 90s. Back then, the web was a
-        fascinating frontier, and I was eager to unravel its mysteries. As a
-        maker at heart, I delved into the intricacies of creating and publishing
-        websites.
-      </p>
-      <div
-        style={{ maxHeight: more ? "2000px" : "0" }}
-        className={
-          more
-            ? "more-content transition-all overflow-hidden duration-500 ease-in-out"
-            : "more-content transition-all overflow-hidden duration-500 ease-in-out"
-        }
-      >
+      <div className="columns-1 lg:columns-2 2xl:columns-3 gap-8">
+        <p className="mb-8 text-xl max-w-xl leading-9">
+          My journey as a web technologist began not too long after the
+          internet&apos;s public availability in the 90s. Back then, the web was
+          a fascinating frontier, and I was eager to unravel its mysteries. As a
+          maker at heart, I delved into the intricacies of creating and
+          publishing websites.
+        </p>
         <p className="mb-8 max-w-prose leading-7">
           In the early 2000s, I worked as a graphic designer in a community with
           limited web expertise. Determined to bridge the gap, I taught myself
@@ -69,21 +62,6 @@ export default function Journey() {
           me forward.
         </p>
       </div>
-      <button
-        className="text-blue-300 flex grow flex-row items-center gap-2 mt-2 cursor-pointer"
-        onClick={() => setMore(!more)}
-      >
-        <i
-          className={
-            more
-              ? "w-6 h-6 transition-transform"
-              : "w-6 h-6 rotate-180 transition-transform"
-          }
-        >
-          <ChevronUpIcon />
-        </i>
-        {more ? "Less" : "More..."}
-      </button>
     </section>
   );
 }
