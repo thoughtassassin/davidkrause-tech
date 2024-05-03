@@ -12,7 +12,7 @@ export default function Nav() {
     <nav className="bg-neutral-800 w-full fixed pb-0 md:pb-3 px-8 md:px-24 py-3">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
         <p
-          className={`${kode.className} w-full md:w-min md:grow-0 pb-2 md:pb-0 tracking-widest text-slate-300 border-b md:border-b-0 border-violet-500`}
+          className={`${kode.className} w-full md:w-min md:grow-0 pb-2 md:pb-0 tracking-widest text-slate-300`}
         >
           davidkrause.tech
         </p>
