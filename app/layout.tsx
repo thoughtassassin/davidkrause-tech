@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Holtwood_One_SC } from "next/font/google";
 import Nav from "@/app/components/Nav";
 import "./globals.css";
 
