@@ -16,10 +16,12 @@ export default function Nav() {
         >
           davidkrause.tech
         </p>
-        <div className="mt-2 mb-2 md:my-0">
+        <div className="mt-2 mb-1 md:my-0">
           <Link
             className={`${
-              pathname === "/" ? "border-green-600 border-b-2" : ""
+              pathname === "/"
+                ? "border-green-600 border-b-2 text-slate-200"
+                : "text-slate-400"
             } text-blue-100 pl-0 md:pl-1 px-1 pt-1 pb-1 uppercase tracking-widest mr-4`}
             href="/"
           >
@@ -27,8 +29,10 @@ export default function Nav() {
           </Link>
           <Link
             className={`${
-              pathname === "/projects" ? "border-green-600 border-b-2" : ""
-            } text-blue-100 px-1 pt-2 pb-1 uppercase tracking-widest ml-4`}
+              pathname === "/projects"
+                ? "border-green-600 border-b-2 text-slate-200"
+                : "text-slate-400"
+            } px-1 pt-2 pb-1 uppercase tracking-widest ml-4`}
             href="/projects"
           >
             Projects
