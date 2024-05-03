@@ -24,10 +24,11 @@ export default function Journey() {
         websites.
       </p>
       <div
+        style={{ maxHeight: more ? "1000px" : "0" }}
         className={
           more
-            ? "more-content transition-all max-h-screen overflow-hidden duration-500 ease-in-out"
-            : "more-content transition-all max-h-0 overflow-hidden duration-500 ease-in-out"
+            ? "more-content transition-all overflow-hidden duration-500 ease-in-out"
+            : "more-content transition-all overflow-hidden duration-500 ease-in-out"
         }
       >
         <p className="mb-8 max-w-prose">
