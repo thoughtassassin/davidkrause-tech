@@ -9,7 +9,7 @@ const kode = Kode_Mono({ weight: '400', subsets: ['latin'] });
 export default function Nav() {
   const pathname = usePathname();
   return (
-    <nav className="bg-neutral-800 w-full fixed pb-0 md:pb-3 px-4 sm:px-8 md:px-24 py-3">
+    <nav className="bg-neutral-800 w-full fixed pb-0 md:pb-3 px-8 md:px-24 py-3">
       <div className="flex flex-col md:flex-row justify-between items-start w-full">
         <p
           className={`${kode.className} pt-1 sm:w-full sm:w-min md:grow-0 pb-2 md:pb-0 tracking-widest text-slate-300`}
