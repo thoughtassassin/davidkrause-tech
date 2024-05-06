@@ -3,7 +3,6 @@
 import { Sedan } from "next/font/google";
 
 import { useState } from "react";
-import { ChevronUpIcon } from "@heroicons/react/16/solid";
 
 const sedan = Sedan({ weight: "400", subsets: ["latin"] });
 
