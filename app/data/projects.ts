@@ -8,8 +8,15 @@ export const projects = [
   {
     title: "Peer Chat",
     description:
-      "The peer to peer chat was a proof of concept for a hackathon. Using WebRTC and STUN and TURN (deployed as an AWS Lambda) servers to establish a UDP connection users could call and talk to one another through a connection on the OneDay web app.",
+      "The peer to peer chat was a proof of concept for a hackathon. Using WebRTC and STUN and TURN (deployed as an AWS Lambda) servers to establish a UDP connection users could call and talk to one another through a connection on the OneDay web app. The image below shows the peer to peer chat in action. Click on the image to watch a video of the peer to peer chat in action.",
     link: "",
+    videos: [
+      {
+        thumbnail: "/peer-to-peer.png",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/part2-gV4PhLb8DZ1fKN1iBN8xFmK7rAFqSc.mp4",
+        alt: "Peer to Peer Chat",
+      },
+    ],
   },
   {
     title: "Reporting Dashboard",

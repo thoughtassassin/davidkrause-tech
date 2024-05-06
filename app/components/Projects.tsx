@@ -11,10 +11,14 @@ export default function Projects() {
       >
         Projects
       </h1>
-      <ul>
+      <ul className="grid lg:grid-cols-2 xl:grid-cols-3 gap-5">
         {projects.map((project, index) => (
           <li key={index}>
-            <Project title={project.title} description={project.description} />
+            <Project
+              title={project.title}
+              description={project.description}
+              videos={project.videos}
+            />
           </li>
         ))}
       </ul>
