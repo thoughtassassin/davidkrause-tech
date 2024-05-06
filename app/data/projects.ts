@@ -13,7 +13,7 @@ export const projects = [
     videos: [
       {
         thumbnail: "/peer-to-peer.png",
-        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/part2-gV4PhLb8DZ1fKN1iBN8xFmK7rAFqSc.mp4",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/oneday-chat-rtagSAWOuIE6kpatlMQY3MhBft0jfS.mp4",
         alt: "Peer to Peer Chat",
       },
     ],

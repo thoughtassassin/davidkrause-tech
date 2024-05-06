@@ -5,12 +5,22 @@ const kode = Kode_Mono({ weight: "400", subsets: ["latin"] });
 interface ProjectProps {
   title: string;
   description: string;
-  videos?: { thumbnail: string; url: string, alt: string }[];
+  videos?: { thumbnail: string; url: string; alt: string }[];
+  setIsOpen?: (isOpen: boolean) => void;
+  setVideoUrl?: (url: string) => void;
+  setModalTitle?: (title: string) => void;
 }
 
-export default function Project({ title, description, videos }: ProjectProps) {
+export default function Project({
+  title,
+  description,
+  videos,
+  setIsOpen,
+  setVideoUrl,
+  setModalTitle
+}: ProjectProps) {
   return (
-    <div className="p-4 rounded-md shadow-md mb-4">
+    <div className="p-4 rounded-md shadow-md">
       <h2 className={`${kode.className} text-3xl mb-2 text-rose-500`}>
         {title}
       </h2>
@@ -18,7 +28,19 @@ export default function Project({ title, description, videos }: ProjectProps) {
       {videos && videos.length > 0 && (
         <div className="mt-2">
           {videos.map((video, index) => (
-            <div key={index} className="mt-4 mw-48">
+            <div
+              key={index}
+              className="mt-4 mw-48"
+              onClick={() => {
+                if (setIsOpen && 
+                    setVideoUrl &&
+                    setModalTitle) {
+                  setIsOpen(true);
+                  setVideoUrl(video.url);
+                  setModalTitle(title);
+                }
+              }}
+            >
               <Image
                 src={video.thumbnail}
                 alt={video.alt}

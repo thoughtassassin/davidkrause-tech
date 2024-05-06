@@ -1,13 +1,7 @@
-"use client";
-
 import { Sedan } from "next/font/google";
-
-import { useState } from "react";
-
 const sedan = Sedan({ weight: "400", subsets: ["latin"] });
 
 export default function Journey() {
-  const [more, setMore] = useState(false);
   return (
     <section className="min-w-full">
       <h1
