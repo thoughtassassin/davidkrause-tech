@@ -1,5 +1,7 @@
 import { Sedan } from "next/font/google";
 const sedan = Sedan({ weight: "400", subsets: ["latin"] });
+import { projects } from "@/app/data/projects";
+import Project from '@/app/components/Project';
 
 export default function Projects() {
   return (
@@ -9,12 +11,12 @@ export default function Projects() {
       >
         Projects
       </h1>
-      <p className="mb-10 text-xl">
-        Below are a list of projects. Click on the project below to see more.
-      </p>
       <ul>
-        <li>Video Editor</li>
-        <li>Peer Chat</li>
+        {projects.map((project, index) => (
+          <li key={index}>
+            <Project title={project.title} description={project.description} />
+          </li>
+        ))}
       </ul>
     </section>
   );
