@@ -10,7 +10,7 @@ interface ProjectProps {
 export default function Project({ title, description }: ProjectProps) {
   return (
     <div className="p-4 rounded-md shadow-md">
-      <h2 className={`${kode.className} text-3xl mb-2 text-rose-500 drop-shadow-glow`}>{title}</h2>
+      <h2 className={`${kode.className} text-3xl mb-2 text-rose-500`}>{title}</h2>
       <p>{description}</p>
     </div>
   );
