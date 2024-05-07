@@ -18,7 +18,9 @@ export default function Modal({ isOpen, setIsOpen, url, title, width, height }: 
       onClick={() => setIsOpen(false)}
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
     >
-      <div className="bg-slate-800 p-4 rounded-lg shadow-lg max-w-xl">
+      <div 
+        onClick={e => e.stopPropagation()}
+        className="bg-slate-800 p-4 rounded-lg shadow-lg max-w-xl">
         <header className="flex justify-between">
           <h2 className={`${kode.className} text-blue-400 text-2xl`}>
             {title}
