@@ -5,10 +5,17 @@ const kode = Kode_Mono({ weight: "400", subsets: ["latin"] });
 interface ProjectProps {
   title: string;
   description: string;
-  videos?: { thumbnail: string; url: string; alt: string }[];
+  videos?: {
+    thumbnail: string;
+    url: string;
+    alt: string;
+    width: number;
+    height: number;
+  }[];
   setIsOpen?: (isOpen: boolean) => void;
   setVideoUrl?: (url: string) => void;
   setModalTitle?: (title: string) => void;
+  setModalDimensions?: (dimensions: { w: number; h: number }) => void;
 }
 
 export default function Project({
@@ -17,7 +24,8 @@ export default function Project({
   videos,
   setIsOpen,
   setVideoUrl,
-  setModalTitle
+  setModalTitle,
+  setModalDimensions,
 }: ProjectProps) {
   return (
     <div className="p-4 rounded-md shadow-md">
@@ -26,18 +34,22 @@ export default function Project({
       </h2>
       <p>{description}</p>
       {videos && videos.length > 0 && (
-        <div className="mt-2">
+        <div className="mt-2 flex gap-2">
           {videos.map((video, index) => (
             <div
               key={index}
               className="mt-4 mw-48"
               onClick={() => {
-                if (setIsOpen && 
-                    setVideoUrl &&
-                    setModalTitle) {
+                if (
+                  setIsOpen &&
+                  setVideoUrl &&
+                  setModalTitle &&
+                  setModalDimensions
+                ) {
                   setIsOpen(true);
                   setVideoUrl(video.url);
                   setModalTitle(title);
+                  setModalDimensions({ w: video.width, h: video.height });
                 }
               }}
             >

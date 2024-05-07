@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
 import { useState, useEffect } from "react";
 import { Sedan } from "next/font/google";
 const sedan = Sedan({ weight: "400", subsets: ["latin"] });
 import { projects } from "@/app/data/projects";
-import Project from '@/app/components/Project';
-import Modal from '@/app/components/Modal';
+import Project from "@/app/components/Project";
+import Modal from "@/app/components/Modal";
 
 export default function Projects() {
   const [isOpen, setIsOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
   const [modalTitle, setModalTitle] = useState("");
-
+  const [modalDimensions, setModalDimensions] = useState({ w: 0, h: 0 });
 
   useEffect(() => {
     if (isOpen) {
@@ -19,7 +19,6 @@ export default function Projects() {
     } else {
       document.body.style.overflow = "auto";
     }
-    
   }, [isOpen]);
   return (
     <section className="min-w-full">
@@ -35,14 +34,22 @@ export default function Projects() {
               title={project.title}
               description={project.description}
               videos={project.videos}
-              setIsOpen={setIsOpen} 
+              setIsOpen={setIsOpen}
               setVideoUrl={setVideoUrl}
               setModalTitle={setModalTitle}
+              setModalDimensions={setModalDimensions}
             />
           </li>
         ))}
       </ul>
-      <Modal isOpen={isOpen} setIsOpen={setIsOpen} url={videoUrl} title={modalTitle} />
+      <Modal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        url={videoUrl}
+        title={modalTitle}
+        width={modalDimensions.w}
+        height={modalDimensions.h}
+      />
     </section>
   );
 }

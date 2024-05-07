@@ -8,9 +8,11 @@ interface ModalProps {
   setIsOpen: (isOpen: boolean) => void;
   url: string;
   title?: string;
+  width?: number;
+  height?: number;
 }
 
-export default function Modal({ isOpen, setIsOpen, url, title }: ModalProps) {
+export default function Modal({ isOpen, setIsOpen, url, title, width, height }: ModalProps) {
   return isOpen ? (
     <div
       onClick={() => setIsOpen(false)}
@@ -28,9 +30,8 @@ export default function Modal({ isOpen, setIsOpen, url, title }: ModalProps) {
         <video
           controls
           className="mt-4 m-w-full rounded-md"
-          width="506"
-          height="248"
-          poster="/davidkrausetech-poster.svg"
+          width={width}
+          height={height}
         >
           <source src={url} type="video/mp4" />
         </video>

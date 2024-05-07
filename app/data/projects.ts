@@ -4,6 +4,29 @@ export const projects = [
     description:
       "The Video Editor for the OneDay web app allows users to record using their webcam, upload videos, use videos from a digital library and edit them. The Video Editor uses browser apis such as Media Capture and Streams and merges video and audio streams onto a HTML 5 canvas to allow multiple video streams to be rendered. IndexedDB stores the settings and video and thumbnail object urls locally for quick retrieval. The Video Editor also allows users to send and publish videos to a variety of contacts both in the OneDay platform and ad hoc users as needed.",
     link: "",
+    videos: [
+      {
+        thumbnail: "/video-editor-1.png",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/part1-D6nZMDMIOv1QdHya5RAHkrLHLN1r2z.mp4",
+        alt: "Video Editor Part One",
+        width: 506,
+        height: 285,
+      },
+      {
+        thumbnail: "/video-editor-2.png",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/part2-gV4PhLb8DZ1fKN1iBN8xFmK7rAFqSc.mp4",
+        alt: "Video Editor Part Two",
+        width: 506,
+        height: 285,
+      },
+      {
+        thumbnail: "/video-editor-3.png",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/delivery-swHu7mqC1kZ5MR7NCN3dPl7yuybmbu.mp4",
+        alt: "Video Editor Part Three",
+        width: 506,
+        height: 285,
+      },
+    ],
   },
   {
     title: "Peer Chat",
@@ -15,6 +38,8 @@ export const projects = [
         thumbnail: "/peer-to-peer.png",
         url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/oneday-chat-rtagSAWOuIE6kpatlMQY3MhBft0jfS.mp4",
         alt: "Peer to Peer Chat",
+        width: 506,
+        height: 248,
       },
     ],
   },
@@ -23,6 +48,15 @@ export const projects = [
     description:
       "We built a reporting dashboard using Chart.js to create animated charts showing video usage on the OneDay platform.",
     link: "",
+    videos: [
+      {
+        thumbnail: "/dashboard.png",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/dashboard-ycc0tpGMihNqOAllDwQqliWQ2tgp4U.mp4",
+        alt: "reporting dashboard",
+        width: 506,
+        height: 314,
+      },
+    ],
   },
   {
     title: "Magento Adobe Experience Manager Integration",
