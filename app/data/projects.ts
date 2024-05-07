@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Video Editor",
     description:
-      "The Video Editor for the OneDay web app allows users to record using their webcam, upload videos, use videos from a digital library and edit them. The Video Editor uses browser apis such as Media Capture and Streams and merges video and audio streams onto a HTML 5 canvas to allow multiple video streams to be rendered. IndexedDB stores the settings and video and thumbnail object urls locally for quick retrieval. The Video Editor also allows users to send and publish videos to a variety of contacts both in the OneDay platform and ad hoc users as needed.",
+      "The Video Editor for the OneDay web app allows users to record using their webcam, upload videos, use videos from a digital library and edit them. The Video Editor uses browser apis such as Media Capture and Streams and merges video and audio streams onto a HTML 5 canvas to allow multiple video streams to be rendered. IndexedDB stores the settings and video and thumbnail object urls locally for quick retrieval. The Video Editor also allows users to send and publish videos to a variety of contacts both in the OneDay platform and ad hoc users as needed. Click on the images to watch videos of the Video Editor in action.",
     link: "",
     videos: [
       {
@@ -46,7 +46,7 @@ export const projects = [
   {
     title: "Reporting Dashboard",
     description:
-      "We built a reporting dashboard using Chart.js to create animated charts showing video usage on the OneDay platform.",
+      "We built a reporting dashboard using Chart.js to create animated charts and custom graphic legends showing video usage on the OneDay platform. The dashboard was built using React and was a part of the OneDay web app. The dashboard showed the number of videos created, the number of videos published, the number of videos sent and the number of videos viewed. The dashboard also filtered by community and date range. Click on the image to watch a video of the reporting dashboard.",
     link: "",
     videos: [
       {
@@ -73,8 +73,17 @@ export const projects = [
   {
     title: "Signature Theaters",
     description:
-      "Signature Theaters is the company website acting as a simple marketing tool. The website features and background video showcasing a retractable screen installed to reveal a television above a fireplace. The website also features an interface to allow users to chat with support at Signature Theaters.",
+      "Signature Theaters is the company website acting as a simple marketing tool. The website features and background video showcasing a retractable screen installed to reveal a television above a fireplace. The website also features an interface to allow users to chat with support at Signature Theaters. Click on the image to watch a video of the Signature Theaters website.",
     link: "",
+    videos: [
+      {
+        thumbnail: "/signature-theaters.png",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/signature-vxR1xfhkhystPoY7AycMSHTiv918LB.mp4",
+        alt: "Signature Theaters",
+        width: 506,
+        height: 285,
+      },
+    ],
   },
   {
     title: "License and Permit SaaS Platform",
@@ -85,8 +94,17 @@ export const projects = [
   {
     title: "TOPS",
     description:
-      "TOPS is the license and permit application used by the Texas Department of Public Safety to manage all licenses for private security in Texas. The customer facing application is written AngularJS. The customer facing application was the first SPA (single page application) javascript used by TexasNIC / Texas.gov. The customer facing application is a wizard to allow users to fill out new applications for private security services.",
+      "TOPS is the license and permit application used by the Texas Department of Public Safety to manage all licenses for private security in Texas. The customer facing application is written AngularJS. The customer facing application was the first SPA (single page application) javascript used by TexasNIC / Texas.gov. The customer facing application is a wizard to allow users to fill out new applications for private security services. Click on the image to watch a video of the TOPS application.",
     link: "",
+    videos: [
+      {
+        thumbnail: "/tops.png",
+        url: "https://kje6xzcltrtysivq.public.blob.vercel-storage.com/tops-11h23g45QNmtb9QNUNf4aUHR5xFGkW.mp4",
+        alt: "TOPS",
+        width: 506,
+        height: 285,
+      },
+    ],
   },
   {
     title: "True Image Video CMS",

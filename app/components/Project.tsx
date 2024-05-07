@@ -58,7 +58,7 @@ export default function Project({
                 alt={video.alt}
                 width={150}
                 height={100}
-                className="rounded border-2 border-white"
+                className="rounded border-2 border-black"
               />
             </div>
           ))}
