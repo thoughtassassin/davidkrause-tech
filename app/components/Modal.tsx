@@ -30,7 +30,7 @@ export default function Modal({ isOpen, setIsOpen, url, title }: ModalProps) {
           controls
           className="mt-4 m-w-full rounded-md"
           width="506"
-          height="402"
+          height="248"
         />
       </div>
     </div>
