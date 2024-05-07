@@ -26,12 +26,14 @@ export default function Modal({ isOpen, setIsOpen, url, title }: ModalProps) {
           </button>
         </header>
         <video
-          src={url}
           controls
           className="mt-4 m-w-full rounded-md"
           width="506"
           height="248"
-        />
+          poster="/davidkrausetech-poster.svg"
+        >
+          <source src={url} type="video/mp4" />
+        </video>
       </div>
     </div>
   ) : null;
