@@ -113,7 +113,7 @@ export const projects = [
     link: "",
   },
   {
-    title: "Custom PHP and MySQL CMSes",
+    title: "PHP and MySQL Custom CMSes",
     description:
       "While working at CVA Advertising I developed content managements systems written in PHP and MySQL to allow users to manage the content on their marketing websites. Features included a fully function programmatic calendar and map using trignometry fuctions and Google Maps APIs to allow users to get directions to stores. Later the custom CMSes would be replaced by WordPress.",
     link: "",
