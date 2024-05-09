@@ -67,7 +67,7 @@ export const projects = [
   {
     title: "Collaboracast",
     description:
-      "Collaboracast was a remake of an older sales communication software web application that I built for Don-Nan. The application allowed the sales team to keep track of communication with customers so that the sales team would not duplicate or contradict communications given by other sales team members. The older version was written in the Laravel PHP framework and connected to a MySQL database. Collaboracast was built using Sequlize (a Node.js ORM) and connected to a PostgreSQL database. The front end was built using React and the api and web application were both deployed to Heroku.",
+      "Collaboracast was a remake of an older sales communication software web application that I built for Don-Nan. The application allowed the sales team to keep track of communication with customers so that the sales team would not duplicate or contradict communications given by other sales team members. The older version was written in the Laravel PHP framework and connected to a MySQL database. Collaboracast was built using Sequelize (a Node.js ORM) and connected to a PostgreSQL database. The front end was built using React and the api and web application were both deployed to Heroku.",
     link: "",
   },
   {
