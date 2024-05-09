@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Video Editor",
     description:
-      "The Video Editor for the OneDay web app allows users to record using their webcam, upload videos, use videos from a digital library and edit them. The Video Editor uses browser apis such as Media Capture and Streams and merges video and audio streams onto a HTML 5 canvas to allow multiple video streams to be rendered. IndexedDB stores the settings and video and thumbnail object urls locally for quick retrieval. The Video Editor also allows users to send and publish videos to a variety of contacts both in the OneDay platform and ad hoc users as needed. Click on the images to watch videos of the Video Editor in action.",
+      "The Video Editor for the OneDay web app allows users to compose videos from various video sources. The video sources include video recorded by webcam, video recorded from the screen (or both simultaneously), uploaded videos or videos from a digital library. The video recorder for the Video Editor uses browser apis such as Media Capture and Streams and merges video and audio streams onto a HTML 5 canvas to allow multiple video streams to be rendered. IndexedDB stores the settings and video and thumbnail object urls locally for quick retrieval. The Video Editor also allows users to send and publish videos to a variety of contacts both in the OneDay platform and ad hoc users as needed. Click on the images to watch videos of the Video Editor in action.",
     link: "",
     videos: [
       {
@@ -31,7 +31,7 @@ export const projects = [
   {
     title: "Peer Chat",
     description:
-      "The peer to peer chat was a proof of concept for a hackathon. Using WebRTC and STUN and TURN (deployed as an AWS Lambda) servers to establish a UDP connection users could call and talk to one another through a connection on the OneDay web app. The image below shows the peer to peer chat in action. Click on the image to watch a video of the peer to peer chat in action.",
+      "The peer to peer chat was a proof of concept for a hackathon. WebRTC using STUN and TURN servers (deployed as an AWS Lambda) establish a UDP connection that allows users to call and talk to one another by video through a connection on the OneDay web app. The image below shows the peer to peer chat in action. Click on the image to watch a video of the peer to peer chat in action.",
     link: "",
     videos: [
       {
@@ -88,7 +88,7 @@ export const projects = [
   {
     title: "License and Permit SaaS Platform",
     description:
-      "The License and Permit platform was an initiative by NIC to centralize all state license and permit web services. From the platform state agencies could log in to create and manage license and permits for their constituents. I solved how to integrate a React application into Spring Boot. The front end contained a form building wizard to create a standard license or permit application to be shared with users.",
+      "The License and Permit platform was an initiative by NIC to centralize all state license and permit web services. From the platform state agencies could log in to create and manage license and permit web applications for their constituents. I solved how to integrate a React application into Spring Boot. The front end contained a form building wizard to create a standard license or permit application to be shared with users.",
     link: "",
   },
   {
@@ -109,13 +109,13 @@ export const projects = [
   {
     title: "True Image Video CMS",
     description:
-      "I built a video cms for True Image using PHP, MySQL and FFMPEG. It allowed the proprietors to upload videos to their website to promote their work. The backend contained an authentication system where customers of True Image and media representatives who aired the videos were able to download videos that True Image created for them. The application was deployed to a HostGator server.",
+      "I built a video cms for True Image using PHP, MySQL and FFMPEG. It allowed the proprietors to upload videos to their website to promote their work. An authentication system allowed customers of True Image and media representatives of agencies that aired the video to download videos that True Image created. The application was deployed to a HostGator server.",
     link: "",
   },
   {
     title: "PHP and MySQL Custom CMSes",
     description:
-      "While working at CVA Advertising I developed content managements systems written in PHP and MySQL to allow users to manage the content on their marketing websites. Features included a fully function programmatic calendar and map using trignometry fuctions and Google Maps APIs to allow users to get directions to stores. Later the custom CMSes would be replaced by WordPress.",
+      "While working at CVA Advertising I developed content managements systems written in PHP and MySQL to allow users to manage the content on their marketing websites. Features included a fully function programmatic calendar and a map application using trignometry fuctions and Google Maps APIs to allow users to get directions to stores. Later the custom CMSes would be replaced by WordPress.",
     link: "",
   },
 ];
