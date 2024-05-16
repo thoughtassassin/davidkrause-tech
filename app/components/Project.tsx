@@ -5,6 +5,10 @@ const kode = Kode_Mono({ weight: "400", subsets: ["latin"] });
 interface ProjectProps {
   title: string;
   description: string;
+  link?: {
+    url: string;
+    text: string;
+  } | undefined;
   videos?: {
     thumbnail: string;
     url: string;
@@ -22,6 +26,7 @@ export default function Project({
   title,
   description,
   videos,
+  link,
   setIsOpen,
   setVideoUrl,
   setModalTitle,
@@ -33,6 +38,13 @@ export default function Project({
         {title}
       </h2>
       <p>{description}</p>
+      {link && (
+        <p className="mt-2">
+          <a className="underline text-slate-200 hover:text-white" href={link.url}>
+            {link.text}
+          </a>
+        </p>
+      )}
       {videos && videos.length > 0 && (
         <div className="mt-2 flex gap-2">
           {videos.map((video, index) => (

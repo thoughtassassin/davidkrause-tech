@@ -20,6 +20,8 @@ export default function Projects() {
       document.body.style.overflow = "auto";
     }
   }, [isOpen]);
+
+  console.log(projects);
   return (
     <section className="min-w-full">
       <h1
@@ -34,6 +36,7 @@ export default function Projects() {
               title={project.title}
               description={project.description}
               videos={project.videos}
+              link={project.link}
               setIsOpen={setIsOpen}
               setVideoUrl={setVideoUrl}
               setModalTitle={setModalTitle}
