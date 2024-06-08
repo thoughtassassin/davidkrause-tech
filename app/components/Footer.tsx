@@ -1,8 +1,12 @@
 import Image from "next/image";
 
-export default function Footer() {
+interface FooterProps {
+  isFixed?: boolean;
+}
+
+export default function Footer({isFixed}: FooterProps) {
   return (
-    <footer className="bg-neutral-900 text-white p-8 pl-12 md:pl-24">
+    <footer className={isFixed ? "bg-neutral-900 text-white p-8 pl-12 md:pl-24 absolute bottom-[-146px] w-full" : "bg-neutral-900 text-white p-8 pl-12 md:pl-24"}>
         <div>
           <a
             href="https://www.linkedin.com/in/david-krause-52941910/"

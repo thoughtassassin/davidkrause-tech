@@ -56,7 +56,7 @@ export const projects = [
     ],
   },
   {
-    title: "Magento Adobe Experience Manager Integration",
+    title: "Magento AEM Integration",
     description:
       "We reverse engineered the existing front end React application for deploying AEM assets and websites though the Cloud Manager platform. Once we had an idea how it worked we built APIs and interfaces to allow Adobe Experience Manager users to deploy Magento stores. Users could see Call To Action hero cards on the dashboard letting them know important information about the state of their store. They also had environment and deployment cards to show the status of both on the dashboard. They were able to see the process of deployments as a timeline showing build, testing and deployment to the environment. To see a blog about the product click on the link below:",
     link: {

@@ -24,6 +24,20 @@ const config: Config = {
           "0 0 1px rgba(30,132,242,0.92)",
         ],
       },
+      keyframes: {
+        "slide-in": {
+          "0%": { transform: "translateY(-10rem)" },
+          "50%": { transform: "translateY(0)" },
+        },
+        "slide-up": {
+          "0%": { transform: "translateY(10rem)" },
+          "50%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "slide-in": "slide-in 750ms ease forwards",
+        "slide-up": "slide-up 750ms ease forwards",
+      },
     },
   },
   plugins: [],
