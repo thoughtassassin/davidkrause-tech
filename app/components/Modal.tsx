@@ -1,3 +1,4 @@
+import { useEffect }  from "react";
 import { Kode_Mono } from "next/font/google";
 import { XCircleIcon } from "@heroicons/react/16/solid";
 
@@ -13,6 +14,14 @@ interface ModalProps {
 }
 
 export default function Modal({ isOpen, setIsOpen, url, title, width, height }: ModalProps) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
+  
   return isOpen ? (
     <div
       onClick={() => setIsOpen(false)}
