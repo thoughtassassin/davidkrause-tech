@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Sedan } from "next/font/google";
 const sedan = Sedan({ weight: "400", subsets: ["latin"] });
 import { projects } from "@/app/data/projects";
@@ -14,7 +14,7 @@ export default function Projects() {
   const [modalTitle, setModalTitle] = useState("");
   const [modalDimensions, setModalDimensions] = useState({ w: 0, h: 0 });
   const [isVisible, setIsVisible] = useState("");
-  const observer = useRef<IntersectionObserver | null>(null);
+  const [observer, setObserver] = useState<IntersectionObserver | null>(null);
 
   return (
     <section className="min-w-full h-full bg-black relative m-0 p-0">
@@ -28,6 +28,7 @@ export default function Projects() {
 
       <Slider 
         setIsVisible={setIsVisible}
+        setObserver={setObserver}
         observer={observer}
       >
         {projects.map((project, index) => (

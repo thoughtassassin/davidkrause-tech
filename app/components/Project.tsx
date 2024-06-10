@@ -25,7 +25,7 @@ interface ProjectProps {
   setModalDimensions?: (dimensions: { w: number; h: number }) => void;
   isVisible?: string;
   slide?: string;
-  observer?: React.MutableRefObject<IntersectionObserver | null>;
+  observer?: IntersectionObserver | null;
 }
 
 export default function Project({
@@ -44,13 +44,14 @@ export default function Project({
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (ref.current && observer?.current) {
-      observer.current?.observe(ref.current);
+    const currRef = ref.current;
+    if (currRef && observer) {
+      observer.observe(currRef);
     }
 
     return () => {
-      if (ref.current && observer?.current) {
-        observer.current?.unobserve(ref.current);
+      if (currRef && observer) {
+        observer.unobserve(currRef);
       }
     };
   }, [ref, observer]);
