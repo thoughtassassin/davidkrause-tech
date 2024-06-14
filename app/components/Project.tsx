@@ -55,7 +55,7 @@ export default function Project({
         >
           {title}
         </motion.h2>
-        <p className="text-[0.9rem] sm:text-[1rem] md:max-w-[75cqw] lg:text-[1.5cqw] text-white">
+        <p className="text-[0.8rem] sm:text-[1rem] md:max-w-[75cqw] lg:text-[1.5cqw] text-white">
           {description}
         </p>
         {link && (
