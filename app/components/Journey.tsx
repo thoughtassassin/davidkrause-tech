@@ -4,7 +4,7 @@ export default function Journey() {
   return (
     <section className="min-w-full">
       <h1
-        className={`${sedan.className} text-6xl md:text-8xl font-bold mb-10 min-w-full pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-900`}
+        className={`${sedan.className} text-6xl md:text-8xl mb-10 min-w-full pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-900`}
       >
         My Journey
       </h1>

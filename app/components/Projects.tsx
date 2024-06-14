@@ -18,7 +18,7 @@ export default function Projects() {
     <section className="min-w-full h-full bg-black relative m-0 p-0">
       <div className="fixed flex top-[48px] justify-center h-[calc(100vh-96px)] w-full overflow-hidden">
         <h1
-          className={`${sedan.className} opacity-60 self-center text-center text-[90px] md:text-[200px] font-bold mb-10 pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-900`}
+          className={`${sedan.className} opacity-60 self-center text-center text-[90px] md:text-[200px] mb-10 pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-900`}
         >
           Projects
         </h1>
