@@ -6,8 +6,8 @@ export default function ProjectsPage() {
     <>
       <main className="w-full h-full m-0 p-0 relative">
         <Projects />
-        <Footer isFixed />
       </main>
+      <Footer isFixed />
     </>
   );
 }

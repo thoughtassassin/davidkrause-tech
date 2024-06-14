@@ -1,5 +1,4 @@
-import { Sedan } from "next/font/google";
-const sedan = Sedan({ weight: "400", subsets: ["latin"] });
+import { sedan } from "@/app/fonts";
 
 export default function Journey() {
   return (
