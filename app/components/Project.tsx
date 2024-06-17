@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { kode } from "@/app/fonts";
 import Image from "next/image";
 import { motion, useAnimate } from "framer-motion";
@@ -105,6 +104,7 @@ export default function Project({
                   width={150}
                   height={100}
                   className="rounded border-2 border-black"
+                  priority
                 />
               </motion.button>
             ))}
