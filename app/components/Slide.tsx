@@ -11,7 +11,7 @@ const Slide = ({
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, {
     once: true,
-    margin: "0px 100px -146px 0px"
+    margin: "100px"
   });
   const controls = useAnimation();
 
@@ -31,7 +31,6 @@ const Slide = ({
       className="snap-start w-full h-full flex justify-center items-center px-4"
     >
       <motion.div
-        layout
         variants={{
           hidden: {
             opacity: 0,

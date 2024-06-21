@@ -1,6 +1,7 @@
 import { useEffect }  from "react";
 import { Kode_Mono } from "next/font/google";
 import { XCircleIcon } from "@heroicons/react/16/solid";
+import { motion } from "framer-motion";
 
 const kode = Kode_Mono({ weight: "400", subsets: ["latin"] });
 
@@ -23,9 +24,15 @@ export default function Modal({ isOpen, setIsOpen, url, title, width, height }: 
   }, [isOpen]);
   
   return isOpen ? (
-    <div
-      onClick={() => setIsOpen(false)}
+    <motion.div
+      onClick={(e) => {
+        e.stopPropagation();
+        setIsOpen(false)}
+      }
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <div 
         onClick={e => e.stopPropagation()}
@@ -34,7 +41,10 @@ export default function Modal({ isOpen, setIsOpen, url, title, width, height }: 
           <h2 className={`${kode.className} text-blue-400 text-2xl`}>
             {title}
           </h2>
-          <button className="text-white" onClick={() => setIsOpen(false)}>
+          <button className="text-white" onClick={(e) => {
+            e.stopPropagation();
+            setIsOpen(false)
+            }}>
             <XCircleIcon className="w-6 h-6 text-blue-400" />
           </button>
         </header>
@@ -47,6 +57,6 @@ export default function Modal({ isOpen, setIsOpen, url, title, width, height }: 
           <source src={url} type="video/mp4" />
         </video>
       </div>
-    </div>
+    </motion.div>
   ) : null;
 }

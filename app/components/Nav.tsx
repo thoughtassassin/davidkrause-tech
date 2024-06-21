@@ -1,11 +1,9 @@
 'use client';
 
 import Image from "next/image";
-import { Kode_Mono } from 'next/font/google';
+import { kode } from '@/app/fonts';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
-
-const kode = Kode_Mono({ weight: '400', subsets: ['latin'] });
 
 export default function Nav() {
   const pathname = usePathname();
