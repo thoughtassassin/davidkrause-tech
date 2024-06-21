@@ -25,7 +25,7 @@ export default function Projects() {
             whileInView={{
               x: 0,
               opacity: 1,
-              transition: { duration: 0.3, delay: 0.15 },
+              transition: { duration: 0.3, delay: 0.25 },
             }}
             viewport={{ once: true }}
             className={`${kode.className} text-3xl lg:text-[3cqw] max-w-prose mb-2 text-rose-500`}
