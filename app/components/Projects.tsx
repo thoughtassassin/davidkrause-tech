@@ -18,8 +18,8 @@ export default function Projects() {
 
   return (
     <div className="h-[100vh] overflow-y-auto snap-mandatory snap-y">
-      {projects.map((project) => (
-        <Slide>
+      {projects.map((project, index) => (
+        <Slide key={index}>
           <motion.h1
             initial={{ x: "10%", opacity: 0 }}
             whileInView={{

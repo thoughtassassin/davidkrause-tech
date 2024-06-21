@@ -19,7 +19,7 @@ const Slide = ({
     if (isInView) {
       controls.start("visible");
     };
-  }, [isInView]);
+  }, [isInView, controls]);
 
   return (
     <div
