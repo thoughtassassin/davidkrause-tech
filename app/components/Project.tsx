@@ -117,6 +117,7 @@ export default function Project({
                 width={150}
                 height={100}
                 className="rounded border-2 border-black"
+                priority
               />
             </div>
           ))}
