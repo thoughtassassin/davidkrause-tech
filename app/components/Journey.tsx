@@ -1,59 +1,108 @@
-import { Sedan } from "next/font/google";
-const sedan = Sedan({ weight: "400", subsets: ["latin"] });
+"use client";
+
+import { motion } from "framer-motion";
+import AnimatedHeading from "@/app/components/AnimatedHeading";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const inView = {
+  initial: "hidden" as const,
+  whileInView: "visible" as const,
+  viewport: { once: true },
+};
 
 export default function Journey() {
   return (
     <section className="min-w-full">
-      <h1
-        className={`${sedan.className} text-6xl md:text-8xl font-bold mb-10 min-w-full pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-900`}
-      >
-        My Journey
-      </h1>
+      <AnimatedHeading text="My Journey" />
       <div className="columns-1 lg:columns-2 2xl:columns-3 gap-8">
-        <p className="mb-8 text-xl max-w-xl leading-9">
-          My journey as a web technologist began not too long after the
-          internet&apos;s public availability in the 90s. Back then, the web was
-          a fascinating frontier, and I was eager to unravel its mysteries. As a
-          maker at heart, I delved into the intricacies of creating and
-          publishing websites.
-        </p>
-        <p className="mb-8 max-w-prose leading-7">
-          In the early 2000s, I worked as a graphic designer in a community with
-          limited web expertise. Determined to bridge the gap, I taught myself
-          website development. Armed with Photoshop, Dreamweaver, and Flash, I
-          transformed designs into functional websites, even venturing into
-          dynamic content management systems with PHP and MySQL.
-        </p>
-        <p className="mb-8 max-w-prose leading-7">
-          One standout project involved animating 3D trucks into a carousel,
-          showcasing my ability to blend creativity with technical prowess. With
-          each project, I expanded my toolkit, diving into mobile app
-          development, REST APIs and backend services always hungry to learn and
-          innovate.
-        </p>
-        <p className="mb-8 max-w-prose leading-7">
-          My journey led me to TexasNIC / Texas.gov, where I spearheaded the
-          adoption of JavaScript frameworks like AngularJS and React,
-          revolutionizing our web development practices. We didn&apos;t stop
-          there—unit testing JavaScript apps became a cornerstone, ensuring
-          robust and reliable code.
-        </p>
-        <p className="mb-8 max-w-prose leading-7">
-          Transitioning to Magento, acquired by Adobe shortly after I started, I
-          tackled integration challenges like solving how to configure, build
-          and run Magento deployments within the Adobe Experience Manager
-          platform. At OneDay, I continued to push boundaries, enhancing the web
-          application with SSO authentication, rich, animated data
-          visualizations using ChartJs and a groundbreaking browser-based video
-          editor.
-        </p>
-        <p className="mb-8 max-w-prose leading-7">
-          Throughout my career, I&apos;ve stayed ahead of the curve, embracing
-          trends like server-side rendering and diving into AI and machine
-          learning. For me, the joy lies in turning ideas into impactful
-          software that resonates with users—a passion that continues to drive
-          me forward.
-        </p>
+        <motion.p
+          variants={fadeUp}
+          {...inView}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mb-8 text-xl max-w-xl leading-9"
+        >
+          I&apos;ve loved drawing since I was a kid — cartoons mostly, inked and
+          colored with markers. That led to painting when I started college,
+          which is still my primary medium. An MFA from the University of
+          Chicago followed, and for a while I taught art and design as an
+          adjunct instructor. The visual instinct I bring to every project — the
+          sense of space, weight, and movement — comes from there. When I found
+          the web in the 90s, I already knew what I liked looking at. Learning
+          to make things move on a screen felt like a natural extension of that.
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          {...inView}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mb-8 max-w-prose leading-7"
+        >
+          In the early 2000s I was working as a graphic designer at an
+          advertising agency, doing brand work, print layouts, and eventually
+          websites. The web was still figuring itself out, and so was I. I
+          taught myself PHP and MySQL, connected Dreamweaver templates to
+          databases, and started building CMSes so clients could manage their
+          own content. Somewhere in there I got deep into Flash and spent hours
+          learning to animate web experiences.
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          {...inView}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mb-8 max-w-prose leading-7"
+        >
+          One of those Flash projects was a 3D animated carousel of trucks that
+          are customized and manufactured for use in the oil field — and
+          that&apos;s probably where I fell in love with using code as a design
+          medium. The precision you get with math that a paintbrush can&apos;t
+          replicate. Motion became something I kept returning to: later in
+          JavaScript, then with ChartJS data visualizations, and eventually a
+          full browser-based video editor built from scratch.
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          {...inView}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mb-8 max-w-prose leading-7"
+        >
+          A few years in, I joined TexasNIC to work on Texas.gov — large-scale
+          government software with thousands of forms, regulatory workflows, and
+          licensing systems. I introduced React and AngularJS to the team and
+          spent a lot of time thinking about how to make complex processes feel
+          navigable to people who didn&apos;t want to be using them in the first
+          place. That&apos;s the UI/UX problem I find most interesting:
+          designing for users who are frustrated before they even arrive.
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          {...inView}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mb-8 max-w-prose leading-7"
+        >
+          At Adobe (via a Magento acquisition) I worked on the overlap between
+          e-commerce infrastructure and content management, figuring out how
+          deployment pipelines could live inside AEM in a way teams could
+          actually follow. Then at OneDay I got to build closer to the surface:
+          SSO authentication, animated data dashboards, a peer-to-peer chat over
+          WebRTC, and a video editor running entirely in the browser. That last
+          one touched every layer of the stack and demanded as much design
+          thinking as engineering.
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          {...inView}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mb-8 max-w-prose leading-7"
+        >
+          These days I&apos;m drawn to the places where AI, design, and
+          interactive media meet. I still draw. I still notice when something is
+          slightly off-kerned or when an animation eases wrong. Those instincts
+          don&apos;t turn off when I&apos;m writing code — if anything,
+          they&apos;re the part that tells me when something is done.
+        </motion.p>
       </div>
     </section>
   );

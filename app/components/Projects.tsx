@@ -1,9 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Sedan } from "next/font/google";
-const sedan = Sedan({ weight: "400", subsets: ["latin"] });
 import { projects } from "@/app/data/projects";
+import AnimatedHeading from "@/app/components/AnimatedHeading";
 import Project from "@/app/components/Project";
 import Modal from "@/app/components/Modal";
 
@@ -21,14 +20,9 @@ export default function Projects() {
     }
   }, [isOpen]);
 
-  console.log(projects);
   return (
     <section className="min-w-full">
-      <h1
-        className={`${sedan.className} text-6xl md:text-8xl font-bold mb-10 min-w-full pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-900`}
-      >
-        Projects
-      </h1>
+      <AnimatedHeading text="Projects" />
       <ul className="grid lg:grid-cols-2 xl:grid-cols-3 gap-5 p-0 m-0">
         {projects.map((project, index) => (
           <li key={index} className="p-0">
