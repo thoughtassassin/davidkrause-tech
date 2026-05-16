@@ -43,7 +43,7 @@ export default function Journey() {
           In the early 2000s I was working as a graphic designer at an
           advertising agency, doing brand work, print layouts, and eventually
           websites. The web was still relatively new. I was excited to learn how
-          to build web experiences and web applicatoins. I taught myself PHP and
+          to build web experiences and web applications. I taught myself PHP and
           MySQL, connected Dreamweaver templates to databases, and started
           building CMSes so clients could manage their own content. Somewhere in
           there I got deep into Flash and spent hours learning to add animations
