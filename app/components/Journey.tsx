@@ -42,11 +42,12 @@ export default function Journey() {
         >
           In the early 2000s I was working as a graphic designer at an
           advertising agency, doing brand work, print layouts, and eventually
-          websites. The web was still figuring itself out, and so was I. I
-          taught myself PHP and MySQL, connected Dreamweaver templates to
-          databases, and started building CMSes so clients could manage their
-          own content. Somewhere in there I got deep into Flash and spent hours
-          learning to animate web experiences.
+          websites. The web was still relatively new. I was excited to learn how
+          to build web experiences and web applicatoins. I taught myself PHP and
+          MySQL, connected Dreamweaver templates to databases, and started
+          building CMSes so clients could manage their own content. Somewhere in
+          there I got deep into Flash and spent hours learning to add animations
+          and dynamic interactions.
         </motion.p>
         <motion.p
           variants={fadeUp}
@@ -54,13 +55,13 @@ export default function Journey() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mb-8 max-w-prose leading-7"
         >
-          One of those Flash projects was a 3D animated carousel of trucks that
-          are customized and manufactured for use in the oil field — and
-          that&apos;s probably where I fell in love with using code as a design
-          medium. The precision you get with math that a paintbrush can&apos;t
-          replicate. Motion became something I kept returning to: later in
-          JavaScript, then with ChartJS data visualizations, and eventually a
-          full browser-based video editor built from scratch.
+          One of those Flash projects was a 3D animated carousel of trucks built
+          by a company that customized and manufactured them for use in the oil
+          field — and that&apos;s probably where I fell in love with using code
+          as a design medium. The idea that mathematics and logic were viable creative
+          tools was transformative. Motion became something I kept returning to:
+          later in JavaScript, then with ChartJS data visualizations, and
+          eventually a full browser-based video editor built from scratch.
         </motion.p>
         <motion.p
           variants={fadeUp}
@@ -74,7 +75,7 @@ export default function Journey() {
           spent a lot of time thinking about how to make complex processes feel
           navigable to people who didn&apos;t want to be using them in the first
           place. That&apos;s the UI/UX problem I find most interesting:
-          designing for users who are frustrated before they even arrive.
+          compelling experiences.
         </motion.p>
         <motion.p
           variants={fadeUp}
@@ -86,10 +87,10 @@ export default function Journey() {
           e-commerce infrastructure and content management, figuring out how
           deployment pipelines could live inside AEM in a way teams could
           actually follow. Then at OneDay I got to build closer to the surface:
-          SSO authentication, animated data dashboards, a peer-to-peer chat over
-          WebRTC, and a video editor running entirely in the browser. That last
-          one touched every layer of the stack and demanded as much design
-          thinking as engineering.
+          animated data dashboards, a peer-to-peer chat over WebRTC, and a video
+          editor running entirely in the browser. That last one touched every
+          layer of the stack and demanded as much design thinking as
+          engineering.
         </motion.p>
         <motion.p
           variants={fadeUp}
